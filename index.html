@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Huran Tunc | Senior Quality Test Engineer</title>
+<meta name="description" content="Huran Tunc, Senior Quality Test Engineer with over fifteen years in software testing, Salesforce, API and test automation.">
+<style>
+:root{
+  --navy:#0e2238;
+  --blue:#2e86c1;
+  --blue2:#6cb4e4;
+  --ink:#1f2a37;
+  --muted:#5b6776;
+  --bg:#f5f8fb;
+  --card:#ffffff;
+  --line:#e3eaf1;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,Calibri,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Hero */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#1d4e7a 0%,transparent 60%),linear-gradient(135deg,#0a1a2b,var(--navy));color:#fff;padding:0 24px}
+nav{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+nav .logo{font-weight:700;letter-spacing:.04em}
+nav .logo span{color:var(--blue2)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:.92rem}
+nav a{color:#cfe3f4}
+nav a:hover{color:#fff;text-decoration:none}
+.hero-inner{max-width:1000px;margin:0 auto;padding:70px 0 90px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.avatar{width:132px;height:132px;border-radius:50%;display:grid;place-items:center;font-size:3rem;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--blue),#1b5a8a);box-shadow:0 0 0 6px rgba(255,255,255,.1),0 12px 40px rgba(0,0,0,.35)}
+.eyebrow{color:var(--blue2);text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:600}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.1;margin:8px 0 12px}
+.lead{color:#cfe3f4;max-width:620px;font-size:1.08rem}
+.cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:600;font-size:.95rem;transition:.2s}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.primary:hover{background:#3c97d6;text-decoration:none;transform:translateY(-1px)}
+.btn.ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1);text-decoration:none}
+
+/* Stats */
+.stats{max-width:1000px;margin:-48px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative}
+.stat{background:var(--card);border-radius:var(--radius);padding:22px;text-align:center;box-shadow:0 10px 30px rgba(14,34,56,.08);border:1px solid var(--line)}
+.stat b{display:block;font-size:2rem;color:var(--blue);line-height:1.1}
+.stat span{font-size:.85rem;color:var(--muted)}
+
+main{max-width:1000px;margin:0 auto;padding:30px 24px 60px}
+section{margin-top:56px}
+h2{font-size:1.5rem;color:var(--navy);display:flex;align-items:center;gap:14px;margin-bottom:22px}
+h2::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--blue),transparent)}
+.about p{font-size:1.06rem;color:#2c3a4a;max-width:820px}
+
+/* Timeline */
+.timeline{position:relative;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.job{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin-bottom:22px;box-shadow:0 6px 20px rgba(14,34,56,.05);transition:.2s}
+.job:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(14,34,56,.1)}
+.job::before{content:"";position:absolute;left:-30px;top:30px;width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--blue)}
+.job.current::before{background:var(--blue);box-shadow:0 0 0 6px rgba(46,134,193,.2)}
+.job header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:baseline}
+.job h3{font-size:1.2rem;color:var(--navy)}
+.date{font-size:.85rem;color:var(--muted);background:#eef4f9;padding:3px 12px;border-radius:999px}
+.company{color:var(--blue);font-weight:600;margin-bottom:10px}
+.company small{color:var(--muted);font-weight:400}
+.job p.intro{color:var(--muted);margin-bottom:10px}
+.job ul{list-style:none}
+.job li{position:relative;padding-left:20px;margin:6px 0}
+.job li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:7px;border-radius:2px;background:var(--blue)}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--blue);color:#fff;padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.skillbox{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
+.skillbox h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;color:var(--blue);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#eef4f9;color:var(--navy);padding:5px 13px;border-radius:999px;font-size:.88rem;border:1px solid #dbe7f1;transition:.15s}
+.chip:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;border-top:4px solid var(--blue)}
+.card b{display:block;color:var(--navy);margin-bottom:4px}
+.card span{color:var(--muted);font-size:.9rem}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two .box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.two h4{color:var(--navy);margin-bottom:6px}
+.two p{color:var(--muted)}
+
+/* Contact */
+.contact{background:linear-gradient(135deg,var(--navy),#17446b);color:#fff;border-radius:var(--radius);padding:40px;text-align:center}
+.contact h2{color:#fff;justify-content:center;margin-bottom:10px}
+.contact h2::after{display:none}
+.contact p{color:#cfe3f4;margin-bottom:20px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 0 40px}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:760px){
+  nav ul{display:none}
+  .hero-inner{grid-template-columns:1fr;text-align:center;padding:40px 0 80px;justify-items:center}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .skills,.two{grid-template-columns:1fr}
+  .cta{justify-content:center}
+}
+@media print{
+  .hero{background:#fff;color:#000}.hero *{color:#000!important}
+  nav,.cta,.contact{display:none}
+  .reveal{opacity:1;transform:none}
+  .job,.stat,.skillbox,.card,.box{box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <nav>
+    <div class="logo">HURAN<span>.</span>TUNC</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hero-inner">
+    <div class="avatar" aria-hidden="true">HT</div>
+    <div>
+      <div class="eyebrow">Senior Quality Test Engineer II</div>
+      <h1>Huran Tunc</h1>
+      <p class="lead">Salesforce, API testing and test automation, with a strong eye on accessibility. Testing since 2009, from early requirements through integration, regression and release.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:hurantunc@gmail.com">Get in touch</a>
+        <a class="btn ghost" href="#experience">See my experience</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat reveal"><b>2009</b><span>Testing since</span></div>
+  <div class="stat reveal"><b data-count="4" data-suffix="">0</b><span>Companies</span></div>
+  <div class="stat reveal"><b data-count="7" data-suffix="">0</b><span>Years at Elsevier</span></div>
+  <div class="stat reveal"><b data-count="6" data-suffix="">0</b><span>Certifications</span></div>
+</div>
+
+<main>
+
+<section id="about" class="reveal">
+  <h2>Profile</h2>
+  <div class="about">
+    <p>Senior QA professional who began testing in 2009, with experience across Salesforce, financial services, content management, mobile applications and fraud detection. I combine hands on manual testing with practical automation and API testing, and I am comfortable working from early requirements through integration, regression and release.</p>
+    <p style="margin-top:12px">In my current role at Elsevier, I test Salesforce Quote to Cash functionality supporting open access agreements, quoting, credit notes and billing. I work closely with product owners, analysts and developers to clarify acceptance criteria, investigate defects and protect the quality of each release. I also support accessibility testing, improve regression coverage and help other testers build their confidence with tools and testing techniques.</p>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Core strengths</h2>
+  <div class="cards">
+    <div class="card"><b>Salesforce and Quote to Cash</b></div>
+    <div class="card"><b>Copado Robotic Testing</b></div>
+    <div class="card"><b>Robot Framework and Python</b></div>
+    <div class="card"><b>Accessibility and cross browser testing</b></div>
+    <div class="card"><b>Manual, regression and end to end testing</b></div>
+    <div class="card"><b>API and integration testing</b></div>
+    <div class="card"><b>Test planning and defect investigation</b></div>
+    <div class="card"><b>Agile delivery and team collaboration</b></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2 class="reveal">Experience</h2>
+  <div class="timeline">
+
+    <article class="job current reveal">
+      <header>
+        <h3>Senior Quality Test Engineer II <span class="badge">Current</span></h3>
+        <span class="date">December 2019 to Present</span>
+      </header>
+      <div class="company">Elsevier Ltd <small>| London</small></div>
+      <p class="intro">Part of the Quote to Cash BAU team within Elsevier's sales technology group, testing Salesforce functionality for the Open Access Salesforce programme. The platform supports open access agreements, quoting, rebilling and billing.</p>
+      <ul>
+        <li>Own QA activities for Salesforce stories, from reviewing requirements and acceptance criteria to executing tests, documenting evidence and supporting release decisions.</li>
+        <li>Test business rules and data integrity across agreements, account agreement period balances, quotes, rebilling and credit note processes.</li>
+        <li>Investigate differences between QA and SIT, including profile and permission set behaviour, record visibility and environment configuration, and work with developers to identify the cause.</li>
+        <li>Build and maintain regression automation using Copado Robotic Testing, Robot Framework and Python, with a focus on reliable, reusable test flows and reducing repetitive manual effort.</li>
+        <li>Create and run API checks with Postman and Insomnia, validating requests, responses, error handling and data exchanged between Salesforce and connected systems.</li>
+        <li>Support Salesforce data setup and verification, including API based queries and upserts, external identifiers and checks designed to avoid duplicate test records.</li>
+        <li>Carry out accessibility checks using tools such as NVDA, WAVE and HeadingsMap, alongside keyboard navigation, screen reader and browser zoom testing.</li>
+        <li>Coordinate cross browser testing through BrowserStack and investigate blockers such as authentication and multi factor authentication issues.</li>
+        <li>Work with developers, analysts and delivery colleagues during refinement, stand ups and defect triage to clarify expected behaviour and agree practical fixes.</li>
+        <li>Share testing knowledge with colleagues and help improve team practices around automation, test evidence and release readiness.</li>
+      </ul>
+    </article>
+
+    <article class="job reveal">
+      <header>
+        <h3>QA Analyst</h3>
+        <span class="date">October 2018 to November 2019</span>
+      </header>
+      <div class="company">Featurespace Ltd <small>| Cambridge</small></div>
+      <p class="intro">Tested ARIC, a real time fraud detection and behavioural analytics product, across Windows and Linux environments.</p>
+      <ul>
+        <li>Performed functional and exploratory testing, raising defects and following them through to resolution.</li>
+        <li>Used SoapUI for API testing and JMeter for performance checks.</li>
+        <li>Maintained test cases as features changed and worked with developers in an Agile team to improve test coverage and feedback.</li>
+      </ul>
+    </article>
+
+    <article class="job reveal">
+      <header>
+        <h3>Quality Assurance Engineer, Contract</h3>
+        <span class="date">July 2017 to July 2018</span>
+      </header>
+      <div class="company">Foundation Home Loans <small>| Bracknell</small></div>
+      <ul>
+        <li>Tested the company's digital loan application process, covering functional modules, interfaces and integrations.</li>
+        <li>Created and executed test plans and scripts, recorded results and raised defects with clear supporting evidence.</li>
+        <li>Reviewed design documents, change requests and acceptance criteria, turning requirements into practical test scenarios.</li>
+        <li>Built Excel matrices and calculations to support test data preparation and validation.</li>
+      </ul>
+    </article>
+
+    <article class="job reveal">
+      <header>
+        <h3>Quality Assurance Engineer</h3>
+        <span class="date">February 2012 to July 2017</span>
+      </header>
+      <div class="company">Alfresco Software Ltd <small>| Maidenhead</small></div>
+      <p class="intro">Sole mobile tester for Alfresco's iOS and Android applications, testing apps built on the Objective C and Java SDKs. The products were used in customer environments with mobile device management platforms, making security and device compatibility important parts of the work.</p>
+      <ul>
+        <li>Planned and delivered testing throughout the development lifecycle, including test strategies, plans, scenarios, cases and release summaries.</li>
+        <li>Created and maintained automated mobile tests using TestPlant and Appium, writing Java based scripts and defining the automation approach.</li>
+        <li>Tested application behaviour across devices and configurations, including integrations with mobile device management platforms such as Good Technology, Symantec and MobileIron.</li>
+        <li>Reported and tracked defects in Jira, provided test estimates and status updates, and worked with developers to prioritise fixes.</li>
+        <li>Contributed to daily scrums, sprint planning, retrospectives and release readiness meetings.</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skillbox">
+      <h4>Salesforce and delivery</h4>
+      <div class="chips"><span class="chip">Salesforce</span><span class="chip">Quote to Cash</span><span class="chip">Permission sets</span><span class="chip">Data validation</span><span class="chip">Agile</span><span class="chip">Waterfall</span></div>
+    </div>
+    <div class="skillbox">
+      <h4>Automation</h4>
+      <div class="chips"><span class="chip">Copado Robotic Testing</span><span class="chip">Robot Framework</span><span class="chip">Python</span><span class="chip">Appium</span><span class="chip">TestPlant</span><span class="chip">Selenium</span></div>
+    </div>
+    <div class="skillbox">
+      <h4>API and performance</h4>
+      <div class="chips"><span class="chip">Postman</span><span class="chip">Insomnia</span><span class="chip">SoapUI</span><span class="chip">JMeter</span><span class="chip">REST API testing</span></div>
+    </div>
+    <div class="skillbox">
+      <h4>Testing</h4>
+      <div class="chips"><span class="chip">Manual</span><span class="chip">Regression</span><span class="chip">Integration</span><span class="chip">End to end</span><span class="chip">Accessibility</span><span class="chip">Mobile</span><span class="chip">Cross browser</span></div>
+    </div>
+    <div class="skillbox">
+      <h4>Platforms and data</h4>
+      <div class="chips"><span class="chip">Java</span><span class="chip">Linux</span><span class="chip">AWS</span><span class="chip">Athena</span><span class="chip">Snowflake</span><span class="chip">MySQL</span></div>
+    </div>
+    <div class="skillbox">
+      <h4>Tools</h4>
+      <div class="chips"><span class="chip">Jira</span><span class="chip">TestRail</span><span class="chip">TestLink</span><span class="chip">TFS</span><span class="chip">TeamCity</span><span class="chip">YouTrack</span><span class="chip">Eclipse</span><span class="chip">BrowserStack</span><span class="chip">NVDA</span><span class="chip">WAVE</span><span class="chip">HeadingsMap</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials" class="reveal">
+  <h2>Certifications</h2>
+  <div class="cards">
+    <div class="card"><b>Copado Robotic Testing</b><span>Certification</span></div>
+    <div class="card"><b>API Testing</b><span>Certification, including Insomnia</span></div>
+    <div class="card"><b>Web Accessibility</b><span>Deep Dive</span></div>
+    <div class="card"><b>CompTIA A+ Essentials</b><span>Certification</span></div>
+    <div class="card"><b>CompTIA A+ IT Technician</b><span>Certification</span></div>
+    <div class="card"><b>MCP Windows XP Professional</b><span>Certification</span></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Education</h2>
+  <div class="two">
+    <div class="box"><h4>BSc Computer Science</h4><p>University of Hertfordshire, 2009</p></div>
+    <div class="box"><h4>Additional information</h4><p>Fluent in English and Turkish. Full UK driving licence.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="contact">
+    <h2>Let's talk</h2>
+    <p>Based in Enfield, London. Always happy to chat about testing, quality and Salesforce.</p>
+    <a class="btn primary" href="mailto:hurantunc@gmail.com">hurantunc@gmail.com</a>
+  </div>
+</section>
+
+</main>
+
+<footer>&copy; <span id="yr"></span> Huran Tunc</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('[data-count]').forEach(el=>{
+  const end=+el.dataset.count,suf=el.dataset.suffix||'';let n=0;
+  const step=()=>{n+=Math.max(1,Math.ceil(end/30));if(n>=end){el.textContent=end+suf}else{el.textContent=n+suf;requestAnimationFrame(step)}};
+  const o=new IntersectionObserver(es=>{if(es[0].isIntersecting){step();o.disconnect()}});o.observe(el);
+});
+</script>
+</body>
+</html>
